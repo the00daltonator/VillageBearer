@@ -1,0 +1,28 @@
+body{background-color:#000000;
+font-family:ariel;}
+a{color:#000000;}
+a:hover{color:#cdcdcd;}
+article{background-color:#ffe068;
+color:#000000;
+width:700px; 
+margin:auto;
+border:solid #000000 2px;
+padding:10px;}
+p{text-align:center;
+font-size:16pt;}
+span{
+font-weight:bold;}
+div{text-align:center;}
+header{text-align:center;}
+img{margin:10px;}
+li{list-style-image:url(bullet.gif);}
+nav{text-align:center;}
+section{background-color:#ffffff;
+width:600px; 
+height:260px;
+margin:auto;
+border:solid #000000 1px;
+border-radius:20px;
+margin-top:20px;
+margin-bottom:20px;
+padding:20px;}
