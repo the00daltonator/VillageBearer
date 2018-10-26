@@ -39,45 +39,51 @@ Sunday 10AM–10PM
 	<a href="https://arbys.com/our-menu/featured">Arby's Menu</a>
 	</p>
 	</article>
-	<table class="formTable" style="margin: auto; width: 400px; border-radius: 15px;">
-		<tbody>
-		<tr>
-			<td style="background-color: #ffffcc; padding: 5px; border-radius: 15px;">
-			<h3 class="heading" style="text-align: center">Order Information</h3>
-		<form>
-Please fill out the following:
-			<br>
-<div style="padding: 5px">Name: <input type="text" placeholder="Type your name here." size="30" class="input"></div>
-<div style="padding: 5px">Phone: <input type="text" placeholder="Type Phone# here." size="30" class="input"></div>
-<div style="padding: 5px">E-mail: <input type="text" placeholder="Type E-mail here." size="30" class="input"></div>
-<div style="padding: 5px"><input type="radio" name="gender"> Male <input type="radio" name="gender"> Female <input type="radio" name="gender"> Other</div>
-			<div style="padding: 5px">
-Grade/Position:<select class="input">
-				<option>
-				</option><option>Freshman
-				</option><option>Undergraduate
-				</option><option>Graduate
-				</option><option>Staff
-				</option>
-				</select>
-			</div>
-			<div style="padding: 5px">Delivery Location/Instructions: <input type="text" placeholder="Type delivery instructions here." size="30" class="input"></div>
-			<br>
-Restaurant: ARBY'S
-			<div style="padding: 5px; text-align: left;">Order: <input type="text" placeholder="Type order here." size="30" class="input"></div>
-			<div style="padding: 5px; text-align: left;"><strong>Alergies</strong>/Requests: <input type="text" placeholder="Please include allergies/requests." size="30" class="input"></div>
-		<div style="padding: 5px; text-align: center">
-	<form method="post" action="mailto:villagebearer@gmail.com">
-	<input type="submit" value="Send Order"></> 
-	</form>
+	<form method="post" action="https://villagebearer.000webhostapp.com/formmail.php" name="ARBYS">
+		<input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER" />
+		<input type="hidden" name="recipients" value="villagebearer@gmail.com" />
+		<input type="hidden" name="subject" value="Arbys Order" />
+
+		<input type="hidden" name="derive_fields" value="email=EmailAddr,realname=FullName" />
+    	<input type="hidden" name="mail_options" value="Exclude=email;realname" />
+
+
+		<table class="formTable" style="margin: auto; width: 400px; border-radius: 15px;">
+			<tbody>
+			<tr>
+				<td style="background-color: #ffffcc; padding: 5px; border-radius: 15px;">
+				<h3 class="heading" style="text-align: center">Order Information</h3>
+	Please fill out the following:
+				<br>
+	<div style="padding: 5px">Name: <input type="text" placeholder="Type your name here." size="30" class="input"></div>
+	<div style="padding: 5px">Phone: <input type="text" placeholder="Type Phone# here." size="30" class="input"></div>
+	<div style="padding: 5px">E-mail: <input type="text" placeholder="Type E-mail here." size="30" class="input"></div>
+	<div style="padding: 5px"><input type="radio" name="gender"> Male <input type="radio" name="gender"> Female <input type="radio" name="gender"> Other</div>
+				<div style="padding: 5px">
+	Grade/Position:<select class="input">
+					<option>
+					</option><option>Freshman
+					</option><option>Undergraduate
+					</option><option>Graduate
+					</option><option>Staff
+					</option>
+					</select>
+				</div>
+				<div style="padding: 5px">Delivery Location/Instructions: <input type="text" placeholder="Type delivery instructions here." size="30" class="input"></div>
+				<br>
+	Restaurant: ARBY'S
+				<div style="padding: 5px; text-align: left;">Order: <input type="text" placeholder="Type order here." size="30" class="input"></div>
+				<div style="padding: 5px; text-align: left;"><strong>Alergies</strong>/Requests: <input type="text" placeholder="Please include allergies/requests." size="30" class="input"></div>
+			<div style="padding: 5px; text-align: center">
 			&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="submit" value="Submit" />
 		<input type="reset" value="Clear Order" class="button">
 		</div>
-		</form>
 </td>
 </tr>
 </tbody>
 </table>
+</form>
 	<article>
 	<p>
 	<a href="#top1">Back to Top</a>
