@@ -35,12 +35,26 @@ Daily 8AM-9PM
 	<a href="https://www.traderjoes.com/digin">Trader Joe's Dig In</a>
 	</p>
 	</article>
-	<table class="formTable" style="margin: auto; width: 400px; border-radius: 15px;">
+	
+		
+		<form method="post" action="https://villagebearer.000webhostapp.com/formmail.php" name="ARBYS">
+		<input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER" />
+		<input type="hidden" name="recipients" value="villagebearer@gmail.com" />
+		<input type="hidden" name="subject" value="Arbys Order" />
+
+		<input type="hidden" name="derive_fields" value="email=EmailAddr,realname=FullName" />
+    	<input type="hidden" name="mail_options" value="Exclude=email;realname" />
+
+		
+			<table class="formTable" style="margin: auto; width: 400px; border-radius: 15px;">
 		<tbody>
 		<tr>
 			<td style="background-color: #ffffcc; padding: 5px; border-radius: 15px;">
 			<h3 class="heading" style="text-align: center">Order Information</h3>
 		<form>
+		
+		
+		
 Please fill out the following:
 			<br>
 <div style="padding: 5px">Name: <input type="text" placeholder="Type your name here." size="30" class="input"></div>

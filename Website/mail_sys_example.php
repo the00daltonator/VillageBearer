@@ -8,6 +8,7 @@
 
 <?php
 
+$fName = $_POST['firstname'];
 echo fname
 ?>
 </body>
